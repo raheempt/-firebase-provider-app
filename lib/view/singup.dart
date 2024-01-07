@@ -18,6 +18,7 @@ class signup_page extends StatelessWidget {
     final passwordcontroller = TextEditingController();
     return SafeArea(
       child: Scaffold(
+      backgroundColor: Color.fromARGB(225, 172, 171, 171),
         body: Container(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
@@ -31,15 +32,15 @@ class signup_page extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     const Sizedbox(height: 15.0),
-                    // Container(
-                    //     height: 250,
-                    //     width: 329,
-                    //     child: Image.asset("assets/images/login.png")),
+                              Icon(
+                  Icons.apple,
+                  size: 100,
+                ),
                     const Text(
                       'Create Acoount',
                       style: TextStyle(
                           fontSize: 37.0,
-                          color: Color.fromARGB(255, 146, 227, 168),
+                          color: Color.fromARGB(255, 28, 29, 28),
                           fontWeight: FontWeight.w900),
                     ),
                     const SizedBox(
@@ -70,7 +71,7 @@ class signup_page extends StatelessWidget {
                     MyElevatedButton(
                         width: 160,
                         colors: Colors.white,
-                        color: const Color.fromARGB(255, 146, 227, 168),
+                        color: Color.fromARGB(255, 21, 22, 21),
                         buttonText: 'Sign Up',
                         onPressed: () async {
                           try {

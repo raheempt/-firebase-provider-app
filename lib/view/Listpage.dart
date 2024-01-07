@@ -19,7 +19,7 @@ class _ListPageState extends State<ListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Color.fromARGB(255, 146, 227, 168),
+        backgroundColor: Color.fromARGB(255, 181, 187, 182),
         onPressed: () {
           Navigator.push(
             context,
@@ -38,16 +38,16 @@ class _ListPageState extends State<ListPage> {
               },
               icon: Icon(Icons.logout)),
         ],
-        backgroundColor: const Color.fromARGB(255, 146, 227, 168),
+        backgroundColor: Color.fromARGB(255, 127, 129, 127),
         title: const Text(
           "Student Data",
-          style: TextStyle(color: Colors.white, fontSize: 35),
+          style: TextStyle(color: Color.fromARGB(255, 158, 155, 155), fontSize: 35),
         ),
         centerTitle: true,
         automaticallyImplyLeading: false,
       ),
       body: Container(
-        color: Color.fromARGB(255, 146, 227, 168),
+        color: Color.fromARGB(255, 134, 141, 136),
         child: Padding(
           padding: const EdgeInsets.all(18.0),
           child: Container(
@@ -85,7 +85,7 @@ class _ListPageState extends State<ListPage> {
                             top: 5.0,
                           ),
                           child: Card(
-                            color: Color.fromARGB(255, 146, 227, 168),
+                            color: Color.fromARGB(255, 166, 172, 168),
                             child: ListTile(
                               onTap: () {
                                 Navigator.pushNamed(
@@ -102,7 +102,7 @@ class _ListPageState extends State<ListPage> {
                                 );
                               },
                               trailing: IconButton(
-                                onPressed: () {
+                                onPressed: () {  
                                   Provider.of<StudentId>(context,
                                           listen: false)
                                       .delete(studentData.id);

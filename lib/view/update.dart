@@ -40,14 +40,14 @@ class _updateState extends State<update> {
       appBar: AppBar(
         centerTitle: true,
         elevation: 0.0,
-        backgroundColor: Color.fromARGB(255, 146, 227, 168),
+        backgroundColor: Color.fromARGB(255, 172, 175, 173),
       ),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Color.fromARGB(255, 146, 227, 168), Colors.white],
+            colors: [Color.fromARGB(255, 152, 155, 153), Colors.white],
           ),
         ),
         child: SafeArea(
@@ -73,7 +73,7 @@ class _updateState extends State<update> {
                           end: Alignment.bottomCenter,
                           colors: [
                             Colors.white,
-                            Color.fromARGB(255, 146, 227, 168)
+                            Color.fromARGB(255, 173, 184, 176)
                           ],
                         ),
                       ),

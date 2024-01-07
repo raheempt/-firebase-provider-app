@@ -15,8 +15,7 @@ class textfield extends StatelessWidget {
           
           controller:controller ,
           decoration: InputDecoration(
-          
-            fillColor: Colors.white,
+            fillColor: Colors.grey.shade200,
             border:OutlineInputBorder(
               borderRadius: BorderRadius.circular(40.0)
             ),

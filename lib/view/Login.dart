@@ -18,6 +18,7 @@ class login_page extends StatelessWidget {
     final passwordcontroller = TextEditingController();
     return SafeArea(
       child: Scaffold(
+       backgroundColor: Color.fromARGB(224, 199, 195, 195),
         body: SingleChildScrollView(
           child: SizedBox(
             width: MediaQuery.of(context).size.width,
@@ -27,17 +28,18 @@ class login_page extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  // Container(
-                  //   height: 300,
-                  //   width: 379,
-                  //   child: Image.asset("assets/images/login.png")),
-                const  Text(
-                    'Login Here',
-                    style: TextStyle(
-                        fontSize: 47.0,
-                        color: Color.fromARGB(255,146,227,168),
-                        fontWeight: FontWeight.w900),
-                  ),
+                      Icon(
+                  Icons.apple,
+                  size: 100,
+                ),
+                
+                // const  Text(
+                //     'Login Here',
+                //     style: TextStyle(
+                //         fontSize: 47.0,
+                //         color: Color.fromARGB(255,146,227,168),
+                //         fontWeight: FontWeight.w900),
+                //   ),
               const    Sizedbox(height: 20.0),
              const     Text(
                     "Welcome back you've",
@@ -59,7 +61,7 @@ class login_page extends StatelessWidget {
                   textfield(
                     controller: emailcontroller,
                     name: 'email',
-                    color: Color.fromARGB(255, 216, 224, 231),
+                    color: Color(0xFFEEF0F1),
                   
                   ),
                 const   SizedBox(
@@ -77,7 +79,7 @@ class login_page extends StatelessWidget {
                       width: 160,
                       
                       colors: Colors.white,
-                      color: Color.fromARGB(255,146,227,168),
+                      color: Color.fromARGB(255, 20, 20, 20),
                       buttonText: 'Login',
                       onPressed: () async {
                         try {

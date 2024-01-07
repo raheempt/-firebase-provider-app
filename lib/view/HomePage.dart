@@ -11,34 +11,32 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(226, 221, 220, 220),
       body: Container(
         child: Column(
+          
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
           const   SizedBox(
               height: 110,
             ),
-            // Container(
-            //   width: 300,
-            //   height: 300,
-            //   decoration:const  BoxDecoration(
-            //       image: DecorationImage(
-            //           image: AssetImage(
-            //               "assets/images/Exams-bro-removebg-preview (1).png")
-            //               )),
-            // ),
+                 Icon(
+                  Icons.apple,
+                  size: 100,
+                ),
+        
          const    SizedBox(
               height: 50,
             ),
             Text(
               'Welcome ToDo',
               style: GoogleFonts.raleway(
-                  fontSize: 50, fontWeight: FontWeight.w700),
+                  fontSize: 45, fontWeight: FontWeight.w700),
             ),
           const  Text(
               '...',
               style: TextStyle(
-                  fontSize: 105, color: Color.fromARGB(255,146,227,168)),
+                  fontSize: 105, color: Color.fromARGB(225, 29, 27, 27)),
             ),
          const   SizedBox(
               height: 70,
@@ -49,7 +47,7 @@ class HomePage extends StatelessWidget {
                 MyElevatedButton(
                     width: 135,
                     colors: Colors.white,
-                    color: Color.fromARGB(255,146,227,168),
+                    color: Color.fromARGB(255, 12, 12, 12),
                     buttonText: 'Login',
                     onPressed: () {
                       Navigator.push(
@@ -62,8 +60,8 @@ class HomePage extends StatelessWidget {
                 ),
                 MyElevatedButton(
                     width: 135,
-                    colors: Colors.black,
-                    color: Colors.white,
+                    colors: const Color.fromARGB(255, 247, 246, 246),
+                    color: Color.fromARGB(255, 20, 16, 16),
                     buttonText: 'Sign Up',
                     onPressed: () {
                       Navigator.push(
