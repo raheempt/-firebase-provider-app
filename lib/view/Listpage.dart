@@ -112,7 +112,7 @@ class _ListPageState extends State<ListPage> {
                               title: Text(
                                 studentData['Name'],
                               ),
-                              subtitle: Text(studentData['Email']),
+                              subtitle: Text(studentData['Email.com']),
                             ),
                           ),
                         );
