@@ -21,7 +21,6 @@ class _updateState extends State<update> {
   final emailController = TextEditingController();
   final phoneController = TextEditingController();
   final courseController = TextEditingController();
-  // late String location;
   final _key = GlobalKey<FormState>();
 
   User? currentUser = FirebaseAuth.instance.currentUser;

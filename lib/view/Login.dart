@@ -33,13 +33,7 @@ class login_page extends StatelessWidget {
                   size: 100,
                 ),
                 
-                // const  Text(
-                //     'Login Here',
-                //     style: TextStyle(
-                //         fontSize: 47.0,
-                //         color: Color.fromARGB(255,146,227,168),
-                //         fontWeight: FontWeight.w900),
-                //   ),
+            
               const    Sizedbox(height: 20.0),
              const     Text(
                     "Welcome back you've",

@@ -31,14 +31,14 @@ class _AddUserState extends State<AddUser> {
       appBar: AppBar(
         centerTitle: true,
         elevation: 0.0,
-        backgroundColor: Color.fromARGB(255,146,227,168),
+        backgroundColor: Color.fromARGB(255, 170, 172, 170),
       ),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Color.fromARGB(255,146,227,168), Colors.white],
+            colors: [Color.fromARGB(255, 172, 175, 173), Colors.white],
           ),
         ),
         child: SafeArea(
@@ -64,7 +64,7 @@ class _AddUserState extends State<AddUser> {
                           end: Alignment.bottomCenter,
                           colors: [
                             Colors.white,
-                            Color.fromARGB(255,146,227,168)
+                            Color.fromARGB(255, 193, 196, 194)
                           ],
                         ),
                       ),
@@ -72,14 +72,7 @@ class _AddUserState extends State<AddUser> {
                         padding: const EdgeInsets.all(17.0),
                         child: Column(
                           children: [
-                            // Provider.of<picimage>(context).selectedimagepath.isEmpty
-                            //     ? Text('Select Image')
-                            //     : CircleAvatar(
-                            //         radius: 50.0,
-                            //         backgroundImage: FileImage(
-                            //           File(Provider.of<picimage>(context).selectedimagepath),
-                            //         ),
-                            //       ),
+                     
                             SizedBox(height: 15.0),
                             CustomTextFormField(
                               controller: nameController,
@@ -118,19 +111,7 @@ class _AddUserState extends State<AddUser> {
                               labelText: 'Course',
                               hintText: 'Course',
                               validator: nameValidate,
-                              icons: Icon(Icons.person),
-                            ),
-                             
-                            // SizedBox(
-                            //   width: MediaQuery.of(context).size.width,
-                            //   child: ElevatedButton(
-                            //     style: ElevatedButton.styleFrom(
-                            //       primary: Colors.white,
-                            //     ),
-                            //     onPressed: () {
-                            //     },
-                            //   ),
-                            // ),
+                              icons: Icon(Icons.person), ),
                             Sizedbox(height: 15.0),
                             SizedBox(
                               width: MediaQuery.of(context).size.width,

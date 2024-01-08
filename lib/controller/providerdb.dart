@@ -46,6 +46,7 @@ class StudentId extends ChangeNotifier{
       'course': course.text,
     };
     userdata.doc(studentId).update(DATA);
+    notifyListeners();
   }
 
   final students = FirebaseFirestore.instance.collection('notes');
