@@ -71,7 +71,7 @@ class _ListPageState extends State<ListPage> {
                     }
 
                     if (snapshot.data!.docs.isEmpty) {
-                      return Center(child: Text('No Data Found'));
+                      return Center(child: Text('No Data '));
                     }
 
                     return ListView.builder(

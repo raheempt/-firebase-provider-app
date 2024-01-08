@@ -72,7 +72,7 @@ class _AddUserState extends State<AddUser> {
                         padding: const EdgeInsets.all(17.0),
                         child: Column(
                           children: [
-                     
+
                             SizedBox(height: 15.0),
                             CustomTextFormField(
                               controller: nameController,
