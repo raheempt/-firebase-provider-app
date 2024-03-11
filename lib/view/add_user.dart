@@ -117,7 +117,7 @@ class _AddUserState extends State<AddUser> {
                               width: MediaQuery.of(context).size.width,
                               child: ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  primary: Colors.white,
+                                  backgroundColor: Colors.white,
                                 ),
                                 onPressed: () {
                                   if (_key.currentState!.validate()) {

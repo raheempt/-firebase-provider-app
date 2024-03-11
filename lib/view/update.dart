@@ -128,7 +128,7 @@ class _updateState extends State<update> {
                               width: MediaQuery.of(context).size.width,
                               child: ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  primary: Colors.white,
+                                  backgroundColor: Colors.white,
                                 ),
                                 onPressed: () {
                                   if (_key.currentState!.validate()) {
